@@ -1,8 +1,8 @@
 import 'package:dw_barbershop/src/core/exceptions/service_exception.dart';
 import 'package:dw_barbershop/src/core/fp/either.dart';
 import 'package:dw_barbershop/src/core/fp/nil.dart';
-import 'package:dw_barbershop/src/repositories/services/user_login_service.dart';
 import 'package:dw_barbershop/src/repositories/user/user_repository.dart';
+import 'package:dw_barbershop/src/services/user_login/user_login_service.dart';
 import './user_register_adm_service.dart';
 
 class UserRegisterAdmServiceImpl implements UserRegisterAdmService {

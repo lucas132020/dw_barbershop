@@ -2,8 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:dw_barbershop/src/core/exceptions/repository_exception.dart';
 
 import 'package:dw_barbershop/src/core/fp/either.dart';
-import 'package:dw_barbershop/src/core/providers/application_providers.dart';
-import 'package:dw_barbershop/src/core/ui/restClient/rest_client.dart';
+import 'package:dw_barbershop/src/core/restClient/rest_client.dart';
 
 import 'package:dw_barbershop/src/model/barbershop_model.dart';
 
@@ -13,6 +12,7 @@ import './barbershop_repository.dart';
 
 class BarbershopRepositoryImpl implements BarbershopRepository {
   final RestClient restClient;
+
   BarbershopRepositoryImpl({
     required this.restClient,
   });

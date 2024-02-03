@@ -24,7 +24,7 @@ sealed class BarbershopTheme {
         enabledBorder: _defaultINputBorder,
         focusedBorder: _defaultINputBorder,
         errorBorder: _defaultINputBorder.copyWith(
-          borderSide: BorderSide(color: ColorsConstants.red),
+          borderSide: const BorderSide(color: ColorsConstants.red),
         ),
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
