@@ -28,7 +28,7 @@ class _UserRegisterPageState extends ConsumerState<UserRegisterPage> {
 
   @override
   Widget build(BuildContext context) {
-    final UserRegisterVm = ref.watch(userRegisterVmProvider.notifier);
+    final userRegisterVm = ref.watch(userRegisterVmProvider.notifier);
 
     ref.listen(userRegisterVmProvider, (_, state) {
       switch (state) {
@@ -121,7 +121,7 @@ class _UserRegisterPageState extends ConsumerState<UserRegisterPage> {
                       case null || false:
                         Messages.showError('Formulário inválido', context);
                       case true:
-                        UserRegisterVm.register(
+                        userRegisterVm.register(
                           name: nameEC.text,
                           email: emailEC.text,
                           password: passwordEC.text,

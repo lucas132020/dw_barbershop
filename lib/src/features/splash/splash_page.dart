@@ -48,7 +48,9 @@ class _SplashPageState extends State<SplashPage> {
             onEnd: () {
               Navigator.of(context).pushAndRemoveUntil(
                 PageRouteBuilder(
-                  settings: RouteSettings(name: '/auth/login'),
+                  settings: const RouteSettings(
+                    name: '/auth/login',
+                  ),
                   pageBuilder: (
                     context,
                     animation,

@@ -121,7 +121,7 @@ class _LoginPageState extends ConsumerState<LoginPage> {
                           const SizedBox(
                             height: 16,
                           ),
-                          Align(
+                          const Align(
                             alignment: Alignment.centerLeft,
                             child: Text(
                               'Esqueceu a senha?',
